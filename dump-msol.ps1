@@ -20,6 +20,8 @@ Write-Host "    ####   Script for auditing MS Online resources ###" -ForegroundC
 Write-Host "     #####                                     #####*" -ForegroundColor Blue
 Write-Host "       ###########################################" -ForegroundColor Blue
 Write-Host ""
+Write-Host "    Set-MsolCompanySettings -UsersPermissionToReadOtherUsersEnabled $false" -ForegroundColor Blue
+Write-Host ""
 
 Write-Host "Checking prerequisites for PowerShell modules availabilities ... " -NoNewline
 If((Get-InstalledModule -Name "Az" -ErrorAction SilentlyContinue) -and (Get-InstalledModule -Name "MSOnline" -ErrorAction SilentlyContinue)) 
